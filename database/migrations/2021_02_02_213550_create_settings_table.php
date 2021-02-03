@@ -21,7 +21,7 @@ class CreateSettingsTable extends Migration
             $table->string('teittwer' , 255)->mullable();
             $table->string('instagram' , 255)->mullable();
             $table->string('youtube' , 255)->mullable();
-            $table->string('likedin' , 255)->mullable();
+            $table->string('linkedin' , 255)->mullable();
             $table->timestamps();
         });
     }
