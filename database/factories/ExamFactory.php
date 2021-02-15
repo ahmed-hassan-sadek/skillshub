@@ -25,13 +25,13 @@ class ExamFactory extends Factory
         $i++;
         return [
             'name' => json_encode([
-                'english' => $this->faker->word(),
-                'arabic' => $this->faker->word()
+                'en' => $this->faker->word(),
+                'ar' => $this->faker->word()
             ]),
 
             'desc' => json_encode([
-                'english' => $this->faker->text(5000),
-                'arabic' => $this->faker->text(5000)
+                'en' => $this->faker->text(5000),
+                'ar' => $this->faker->text(5000)
             ]),
             'image' => "exams/$i.png",
             'questions_no' => 15,

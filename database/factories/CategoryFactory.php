@@ -23,8 +23,8 @@ class CategoryFactory extends Factory
     {
         return [
             'name' => json_encode([
-                'english' => $this->faker->word(),
-                'arabic' => $this->faker->word()
+                'en' => $this->faker->word(),
+                'ar' => $this->faker->word()
             ]),
         ];
     }

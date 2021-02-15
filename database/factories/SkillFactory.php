@@ -25,8 +25,8 @@ class SkillFactory extends Factory
         $i++;
         return [
             'name' => json_encode([
-                'english' => $this->faker->word(),
-                'arabic' => $this->faker->word()
+                'en' => $this->faker->word(),
+                'ar' => $this->faker->word()
             ]),
             'image' => "skills/$i.png",
         ];
