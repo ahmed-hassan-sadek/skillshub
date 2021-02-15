@@ -33,7 +33,15 @@ return
         'startExamBtn' => 'Starat Exam',
         'cancelBtn' => 'Cancel',
         'submitBtn' => 'Submit',
-        'mins' => 'mins',
+
+        
+        'message' => 'Send A Message',
+        'contactInfo' => 'Contact Information',
+        'name' => 'name',
+        'email' => 'email',
+        'subject' => 'subject',
+        'mainMessage' => 'Enter your Message',
+        'messageBtn' => 'Send Message'
         
     ];
 

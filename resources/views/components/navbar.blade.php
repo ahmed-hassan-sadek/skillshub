@@ -1,6 +1,6 @@
 <nav id="nav">
     <ul class="main-menu nav navbar-nav navbar-right">
-        <li><a href="index.html">{{__('web.home')}}</a></li>
+        <li><a href='{{ url("home/") }}'>{{__('web.home')}}</a></li>
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{__('web.cats')}}<span class="caret"></span></a>
             <ul class="dropdown-menu">
@@ -11,7 +11,7 @@
                 @endforeach
             </ul>
         </li>
-        <li><a href="contact.html">{{__('web.contact')}}</a></li>
+        <li><a href='{{ url("contact/") }}'>{{__('web.contact')}}</a></li>
         <li><a href="login.html">{{__('web.signin')}}</a></li>
         <li><a href="register.html">{{__('web.signup')}}</a></li>
         @if(App::getLocale() == "ar")

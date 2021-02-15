@@ -35,21 +35,15 @@ return
         'cancelBtn' => 'الغاء',
         'submitBtn' => 'ارسال الاجابات',
         'mins' => 'دقيقة',
-        'desc' => 'An aeterno percipit per. His minim maiestatis consetetur et, brute tantas iracundia id sea.
-        Vim tota nostrum reformidans te. Nam ad appareat mediocritatem, mediocrem similique usu ex, 
-        scaevola invidunt eu sed.
-        An aeterno percipit per. His minim maiestatis consetetur et, brute tantas iracundia id sea.
-        Vim tota nostrum reformidans te. Nam ad appareat mediocritatem, mediocrem similique usu ex, 
-        scaevola invidunt eu sed.
-        An aeterno percipit per. His minim maiestatis consetetur et, brute tantas iracundia id sea.
-        Vim tota nostrum reformidans te. Nam ad appareat mediocritatem, mediocrem similique usu ex, 
-        scaevola invidunt eu sed.
-        An aeterno percipit per. His minim maiestatis consetetur et, brute tantas iracundia id sea.
-        Vim tota nostrum reformidans te. Nam ad appareat mediocritatem, mediocrem similique usu ex, 
-        scaevola invidunt eu sed.
-        An aeterno percipit per. His minim maiestatis consetetur et, brute tantas iracundia id sea.
-        Vim tota nostrum reformidans te. Nam ad appareat mediocritatem, mediocrem similique usu ex, 
-        scaevola invidunt eu sed.'
+
+
+        'message' => 'ارسال رسالة',
+        'contactInfo' => 'طرق التواصل',
+        'name' => 'الاسم',
+        'email' => 'الايميل',
+        'subject' => 'الموضوع',
+        'mainMessage' => 'ابدا رسالتك',
+        'messageBtn' => 'ارسال رسالة'
     ];
 
 ?>

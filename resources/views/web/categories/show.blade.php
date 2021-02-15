@@ -1,7 +1,7 @@
 @extends('web.layout')
 
 @section('title')
-	Category : {{ $category->name() }}
+	Category | {{ $category->name() }}
 @endsection
 
 @section('main')

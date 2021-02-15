@@ -17,7 +17,7 @@ class SettingSeeder extends Seeder
             'email' => 'contact@info.com',
             'phone' => '01201578205',
             'facebook' => 'https://www.facebook.com/',
-            'teittwer' => 'https://www.twitter.com',
+            'twitter' => 'https://www.twitter.com',
             'instagram' => 'https://www.instigram.com',
             'youtube' => 'https://www.youtube.com',
             'linkedin' => 'https://www.linkedin.com'
