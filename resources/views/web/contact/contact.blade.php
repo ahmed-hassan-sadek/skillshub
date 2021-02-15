@@ -41,14 +41,14 @@
             <div class="col-md-6">
                 <div class="contact-form">
                     <h4>{{ __('web.message') }}</h4>
-                    @inclue('web.inc.messages')
-                    <form method= "POST" action=" {{ url('contact/message/send') }} ">
+                    @include('web.inc.messages-ajax')
+                    <form id= "contact-form">
                     @csrf
                         <input class="input" type="text" name="name" placeholder="{{ __('web.name') }}">
                         <input class="input" type="email" name="email" placeholder="{{ __('web.email') }}">
                         <input class="input" type="text" name="subject" placeholder="{{ __('web.subject') }}">
                         <textarea class="input" name="body" placeholder="{{ __('web.mainMessage') }}"></textarea>
-                        <button type="submit" class="main-button icon-button pull-right">{{ __('web.messageBtn') }}</button>
+                        <button id="contact-form-btn" type="submit" class="main-button icon-button pull-right">{{ __('web.messageBtn') }}</button>
                     </form>
                 </div>
             </div>
@@ -75,5 +75,46 @@
     <!-- /Contact -->
 
 
+
+@endsection
+
+
+@section('scripts')
+
+    <script>
+
+        $('#success-div').hide()
+        $('#errors-div').hide()
+        $('#contact-form-btn').click(function(e) {
+            $('#success-div').hide()
+            $('#errors-div').hide()
+            $('#success-div').empty()
+            $('#errors-div').empty()
+            e.preventDefault()
+            let formData = new FormData($('#contact-form')[0]);
+
+            $.ajax({
+                type: "POST",
+                url: "{{ url('contact/message/send') }}",
+                data: formData,
+                contactType: false,
+                processData: false,
+
+
+                success: function(data)
+                {
+                    $('#success-div').show()
+                    $('#success-div').text(data.success)
+                },
+                error: function(Xhr , status , error)
+                {
+                    $('#errors-div').show()
+                    $.each(Xhr.responseJSON.errors , function(key , item){
+                        $('#errors-div').append("<p>" + item + "</p>")
+                    });
+                }
+            });
+        })
+    </script>
 
 @endsection

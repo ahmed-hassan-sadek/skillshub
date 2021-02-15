@@ -8,9 +8,13 @@ return
         'contact' => 'Contact Us',
         'signin' => 'Sign In',
         'signup' => 'Sign Up',
+        'signOut' => 'Sign Out',
         'prog' => 'Programming',
         'design' => 'Design',
         'manage' => 'Management',
+        'forgotpassword' => 'Forgot Password',
+        'forgotpassword?' => 'Forgot Password?',
+        'resetpassword' => 'Reset Password',
 
         'herotitle' => 'SkillsHub Free Online Skill Assessment',
         'heroDesc' => 'join us and test your skills now !',
@@ -41,7 +45,14 @@ return
         'email' => 'email',
         'subject' => 'subject',
         'mainMessage' => 'Enter your Message',
-        'messageBtn' => 'Send Message'
+        'messageBtn' => 'Send Message',
+        'titleRegister' => 'Sign Up and estimate your skills',
+        'password' => 'password',
+        'confirmPassword' => 'confirm Password',
+
+        'titleSignin' => 'Sign In to start exam',
+        'remember' => 'Remember Me'
+
         
     ];
 

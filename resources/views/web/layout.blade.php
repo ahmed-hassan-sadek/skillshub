@@ -108,6 +108,13 @@
 <script type="text/javascript" src="{{ asset('web/js/bootstrap.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('web/js/main.js') }}"></script>
 
+<script>
+	$('#logout-link').click(function (e) {
+		e.preventDefault()
+		$('#logout-form').submit()
+	});
+</script>
+
 @yield('scripts')
 
 </body>

@@ -28,12 +28,14 @@ Route::middleware('lang')->group(function() {
     Route::get('/categories/show/{id}', [CategoryController::class,'show']);
     Route::get('/skills/show/{id}' , [SkillController::class , 'show']);
     Route::get('/exams/show/{id}' , [ExamController::class , 'show']);
-    Route::get('/exams/questions/{id}' , [ExamController::class , 'questions']);
+    Route::get('/exams/questions/{id}' , [ExamController::class , 'questions'])->middleware(['auth' , 'verified' , 'student']);
     Route::get('contact/' , [ContactController::class , 'contact']);
-    Route::post('contact/message/send' , [ContactController::class , 'sned']);
 });
 
+Route::post('/exams/start/{id}' , [ExamController::class , 'start'])->middleware(['auth' , 'verified' , 'student']);
+Route::post('/exams/submit/{id}' , [ExamController::class , 'submit'])->middleware(['auth' , 'verified' , 'student']);
 
+Route::post('contact/message/send' , [ContactController::class , 'sned']);
 Route::get('/lang/set/{lang}' , [LangController::class , 'set']);
 
 
